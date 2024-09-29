@@ -1,8 +1,12 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import Navigation from "./components/shared/Navigation";
+import Footer from "./components/shared/Footer";
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Initial Project Setup!</h1>
-    </div>
+    <Router>
+      <Navigation />
+      <Footer />
+    </Router>
   );
 };
 
