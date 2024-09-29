@@ -31,10 +31,10 @@ const Navigation = () => {
             </Link>
           </NavbarBrand>
           <NavbarList>
-            <NavItem text={"Home"} />
-            <NavItem text={"Blogs"} />
-            <NavItem text={"Contact"} />
-            <NavItem text={"About Us"} />
+            <NavItem text={"Home"} path={"/"} />
+            <NavItem text={"Blogs"} path={"/blogs"} />
+            <NavItem text={"Contact"} path={"/contact"} />
+            <NavItem text={"About Us"} path={"/about"} />
           </NavbarList>
           {isLogin ? (
             <NavbarList className="cursor-pointer">
@@ -59,10 +59,10 @@ const Navigation = () => {
           )}
           <NavbarCollapseBtn />
           <NavbarCollapse>
-            <NavItem text={"Home"} />
-            <NavItem text={"Blogs"} />
-            <NavItem text={"Contact"} />
-            <NavItem text={"About Us"} />
+            <NavItem text={"Home"} path={"/"} />
+            <NavItem text={"Blogs"} path={"/blogs"} />
+            <NavItem text={"Contact"} path={"/contact"} />
+            <NavItem text={"About Us"} path={"/about"} />
             {isLogin ? (
               <Avatar>
                 <AvatarImage src="https://www.shutterstock.com/image-vector/young-smiling-man-avatar-brown-600nw-2261401207.jpg" />
