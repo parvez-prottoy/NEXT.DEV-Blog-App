@@ -54,7 +54,9 @@ const Navigation = () => {
             </NavbarList>
           ) : (
             <NavbarList>
-              <Btn text={"Login"} />
+              <Link to="/login">
+                <Btn text={"Login"} />
+              </Link>
             </NavbarList>
           )}
           <NavbarCollapseBtn />
@@ -68,7 +70,9 @@ const Navigation = () => {
                 <AvatarImage src="https://www.shutterstock.com/image-vector/young-smiling-man-avatar-brown-600nw-2261401207.jpg" />
               </Avatar>
             ) : (
-              <Btn text={"Login"} />
+              <Link to="/login">
+                <Btn text={"Login"} />
+              </Link>
             )}
           </NavbarCollapse>
         </NavbarContainer>
